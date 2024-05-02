@@ -1,0 +1,31 @@
+/*Variabler*/
+$bg-color: #222425;
+$primary-color: #35AE48;
+$secondary-color: #23742F;
+$text-color: #F0F0F0;
+$bg-box: rgb(170, 170, 170);
+$aw-color: #3e79a0;
+$font: "Share", sans-serif;;
+$header-font: "Share Tech Mono", monospace;
+
+/*Mixins*/
+
+@mixin btn{
+    background-color: $secondary-color;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: auto;
+    text-decoration: none;
+    font-family: $font;
+    color: $text-color;
+    font-size: 20px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+@mixin btn-hover{
+    background-color: $primary-color;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
