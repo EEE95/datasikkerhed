@@ -34,9 +34,6 @@ html {
 }
 
 body {
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
   background-color: #222425;
   text-align: center;
 }
@@ -52,16 +49,13 @@ footer ul {
   justify-content: center;
   list-style: none;
 }
-footer li.active {
-  color: red;
-}
 footer a {
   font-size: 126px;
   text-decoration: none;
-  color: burlywood;
+  color: rgb(189, 189, 189);
 }
 footer a.active {
-  color: red;
+  color: rgb(8, 8, 8);
 }
 
 .btn {
@@ -90,12 +84,13 @@ footer a.active {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 90vh;
 }
 .hero-section .contain {
   padding-top: 300px;
   padding-bottom: 100px;
   text-align: left;
-  padding-left: 10%;
+  padding-left: 20%;
 }
 .hero-section .contain .titel {
   position: relative;
@@ -128,55 +123,69 @@ footer a.active {
 }
 
 /*informationsside - fold ud box*/
+.bg-info {
+  background-image: url(../img/hacker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .box-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 100px;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 10% 1fr 5% 1fr 10%;
+  grid-template-rows: auto;
+  margin-top: 150px;
+  row-gap: 40px;
 }
 .box-section .box {
-  width: 300px;
-  height: 300px;
   background-color: #35AE48;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  opacity: 90%;
+  width: 450px;
+  height: 100px;
+  border-radius: 2px;
+  text-align: left;
   cursor: pointer;
+  grid-column: 4/5;
+  display: grid;
+  grid-template-columns: 5% 10% 80% 5%;
+  align-items: center;
 }
-.box-section .box p {
-  font-size: 22px;
+.box-section .box img {
+  width: 13px;
+  grid-column: 2/3;
 }
-.box-section .box .indhold {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  padding: 0 1em;
-}
-.box-section .box .indhold .p {
-  padding: 1em 0;
-  margin: 0;
-}
-.box-section .box .indhold::after {
-  height: auto;
+.box-section .box img:hover {
+  transform: scale(1.5);
 }
 .box-section .box h2 {
-  font-size: 26px;
-  position: relative;
+  font-size: 24px;
+  grid-column: 3/4;
 }
-.box-section .box h2::before {
-  content: "+";
-  font-size: 50px;
-  position: absolute;
-  bottom: -140px;
-  right: 45%;
+.box-section .læring {
+  display: none;
 }
-.box-section .box:active h2::before {
-  content: "-";
+.box-section .indhold {
+  opacity: 90%;
+  width: 450px;
+  height: 520px;
+  background-color: rgb(122, 122, 122);
+  grid-column: 2/3;
+  grid-row: 1/5;
+  padding: 20px;
+}
+.box-section .indhold p {
+  padding-top: 10px;
+}
+.box-section .box:nth-child(2) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.box-section .box:nth-child(3) {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.box-section .box:nth-child(4) {
+  grid-column: 4/5;
 }
 
 /*senarie*/
