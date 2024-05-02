@@ -192,3 +192,43 @@ footer{
 
     }
 }
+
+/*senarie*/
+.senarie{
+    .container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px 0 100px;
+    align-items: center;
+  
+      #text{
+        width: 75%;
+      }
+  
+      #option-buttons{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 50px;
+        margin-top: 30px;
+        padding: 10px;
+  
+          button{
+            background-color: rgb(59, 156, 72);
+            padding: 20px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+          }
+      }
+  }
+}
+
+/*afslutning*/
+.end-section{
+    margin-top: 200px;
+    .safety{
+        height: 200px;
+        padding-bottom: 25px;
+    }
+}
