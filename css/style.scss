@@ -100,10 +100,12 @@ footer{
 
 /*intro side*/
 .txt-section{
+    margin: 0 100px;
 
     img{
         width: 40%;
         float: right;
+        margin-top: 50px;
     }
 
     h1, p{
@@ -112,12 +114,12 @@ footer{
 
     h1{
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     p{
         text-align: left;
-        margin: 20px 100px;
+        margin: 50px 0;
     }
 
     .gap{
@@ -209,6 +211,13 @@ footer{
 
 /*senarie*/
 .senarie{
+
+    h1{
+        text-align: center;
+        margin-top: 40px;
+        color: partial.$text-color;
+    }
+
     .container{
     display: flex;
     flex-direction: column;
@@ -217,13 +226,13 @@ footer{
   
       #text{
         width: 75%;
+        color: partial.$text-color;
       }
   
       #option-buttons{
         display: flex;
         flex-direction: column;
         width: 60%;
-        gap: 50px;
         margin-top: 30px;
         padding: 10px;
   
@@ -239,6 +248,13 @@ footer{
 }
 
 /*afslutning*/
+.slutning{
+    background-color:  partial.$secondary-color;
+
+    footer{
+        background-color:  partial.$secondary-color;
+    }
+}
 .end-section{
     margin-top: 200px;
     .safety{

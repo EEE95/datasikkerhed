@@ -65,7 +65,7 @@ footer a.active {
   width: auto;
   text-decoration: none;
   font-family: "Share", sans-serif;
-  color: #F0F0F0;
+  color: #dbdbdb;
   font-size: 20px;
   margin-top: 50px;
   display: inline-block;
@@ -99,24 +99,28 @@ footer a.active {
   font-family: "Share Tech Mono", monospace;
 }
 .hero-section .contain .titel.første-titel {
-  color: #F0F0F0;
+  color: #dbdbdb;
 }
 
 /*intro side*/
+.txt-section {
+  margin: 0 100px;
+}
 .txt-section img {
   width: 40%;
   float: right;
+  margin-top: 50px;
 }
 .txt-section h1, .txt-section p {
-  color: #F0F0F0;
+  color: #dbdbdb;
 }
 .txt-section h1 {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .txt-section p {
   text-align: left;
-  margin: 20px 100px;
+  margin: 50px 0;
 }
 .txt-section .gap {
   margin-left: 50px;
@@ -189,6 +193,11 @@ footer a.active {
 }
 
 /*senarie*/
+.senarie h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #dbdbdb;
+}
 .senarie .container {
   display: flex;
   flex-direction: column;
@@ -197,12 +206,12 @@ footer a.active {
 }
 .senarie .container #text {
   width: 75%;
+  color: #dbdbdb;
 }
 .senarie .container #option-buttons {
   display: flex;
   flex-direction: column;
   width: 60%;
-  gap: 50px;
   margin-top: 30px;
   padding: 10px;
 }
@@ -215,6 +224,13 @@ footer a.active {
 }
 
 /*afslutning*/
+.slutning {
+  background-color: #23742F;
+}
+.slutning footer {
+  background-color: #23742F;
+}
+
 .end-section {
   margin-top: 200px;
 }
