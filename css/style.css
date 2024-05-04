@@ -27,6 +27,14 @@ h3 {
   font-size: 28px;
 }
 
+@media (max-width: 800px) {
+  h1, h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
 html {
   height: 100%;
   width: 100%;
@@ -56,6 +64,11 @@ footer a {
 }
 footer a.active {
   color: rgb(8, 8, 8);
+}
+@media (max-width: 1250px) {
+  footer a {
+    font-size: 100px;
+  }
 }
 
 .btn {
@@ -98,6 +111,11 @@ footer a.active {
   font-size: 75px;
   font-family: "Share Tech Mono", monospace;
 }
+@media (max-width: 1000px) {
+  .hero-section .contain .titel {
+    font-size: 50px;
+  }
+}
 .hero-section .contain .titel.første-titel {
   color: #dbdbdb;
 }
@@ -105,7 +123,6 @@ footer a.active {
 /*intro side*/
 .txt-section {
   margin: 0 100px;
-  height: auto;
 }
 .txt-section img {
   width: 40%;
@@ -133,6 +150,14 @@ footer a.active {
   font-weight: 800;
   color: black;
 }
+@media (max-width: 800px) {
+  .txt-section {
+    margin: 0 50px;
+  }
+  .txt-section p {
+    font-size: 18px;
+  }
+}
 
 /*informationsside - fold ud box*/
 .bg-info {
@@ -144,7 +169,7 @@ footer a.active {
 
 .box-section {
   display: grid;
-  grid-template-columns: 10% 1fr 5% 1fr 10%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   margin-top: 150px;
   row-gap: 40px;
@@ -157,7 +182,9 @@ footer a.active {
   border-radius: 2px;
   text-align: left;
   cursor: pointer;
-  grid-column: 4/5;
+  grid-column: 2/3;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: 5% 10% 80% 5%;
   align-items: center;
@@ -181,7 +208,7 @@ footer a.active {
   width: 450px;
   height: 520px;
   background-color: rgb(122, 122, 122);
-  grid-column: 2/3;
+  grid-column: 1/2;
   grid-row: 1/5;
   padding: 20px;
 }
@@ -189,16 +216,19 @@ footer a.active {
   padding-top: 10px;
   text-align: left;
 }
+.box-section .indhold h2 {
+  font-size: 28px;
+}
 .box-section .box:nth-child(2) {
-  grid-column: 4/5;
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 .box-section .box:nth-child(3) {
-  grid-column: 4/5;
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 .box-section .box:nth-child(4) {
-  grid-column: 4/5;
+  grid-column: 2/3;
 }
 
 /*senarie*/
@@ -245,7 +275,11 @@ footer a.active {
 }
 
 .end-section {
-  margin-top: 200px;
+  margin: 200px 100px;
+}
+.end-section h4 {
+  font-family: "Share Tech Mono", monospace;
+  margin-top: 30px;
 }
 .end-section .safety {
   height: 200px;
