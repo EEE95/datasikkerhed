@@ -55,6 +55,29 @@ footer{
     width: 100%;
     background-color: partial.$bg-color;
 
+    img{
+        width: 40px;
+        cursor: pointer;
+        float: left;
+        border: 1px black solid;
+        padding: 3px;
+
+      
+          &:hover{
+            background-color: rgb(228, 192, 77);
+          }
+         
+      }
+      
+      #bank{
+            border-radius: 10px 0 0 10px;
+            margin-left: 20px;
+          }
+      
+      #dao{
+        border-radius: 0 10px 10px 0;
+      }
+
     ul{
       display: flex;
       justify-content: center;

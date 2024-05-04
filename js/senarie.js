@@ -1,8 +1,24 @@
 //senarie
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
+const bank = document.getElementById("bank");
+const dao = document.getElementById("dao");
+
+bank.addEventListener('click', () => {
+  changeSenarie(1); 
+});
+
+
+dao.addEventListener('click', () => {
+  changeSenarie(7); 
+});
 
 let state = {};
+
+function changeSenarie(senarieId) {
+  state = {};
+  showTextNode(senarieId);
+}
 
 function startSenarie() {
   state = {}
@@ -32,21 +48,29 @@ function changeBackground(nextText) {
   const body = document.querySelector('body');
   switch (nextText) {
     case 1:
+    case 7:
       body.style.backgroundImage = 'url("img/bg-start.png")';
       break;
     case 2:
+    case 11:
+    case 15:
       body.style.backgroundImage = 'url("img/bg-hacker-meget-sur.png")';
       break;
     case 3:
+    case 9:
+    case 10:
+    case 16:
       body.style.backgroundImage = 'url("img/bg-hacker-lidt-sur.png")';
       break;
     case 4:
+    case 8:
       body.style.backgroundImage = 'url("img/bg-hacker-lidt-glad.png")';
       break;
     case 5:
-      body.style.backgroundImage = 'url("img/bg-hacker-meget-glad.png")';
-      break;
     case 6:
+    case 12:
+    case 13:
+    case 14:
       body.style.backgroundImage = 'url("img/bg-hacker-meget-glad.png")';
       break;
     default:
@@ -151,7 +175,154 @@ const textNodes = [
         nextText: 1
       }
     ]
+  },
+
+  {
+    id: 7,
+    text: 'Du åbner din indbakke og ser en ny mail fra DAO, de skriver at din pakke er strandet og de mangler nogle oplysninger før de kan udleverer den til dig. Hvad gør du?',
+    options: [
+      {
+        text: 'Klikker på linket ',
+        nextText: 8
+      },
+      {
+        text: 'Går direkte til DAO’s hjemmeside',
+        nextText: 9
+      },
+      {
+        text: 'Anmelder afsender  og sletter mailen',
+        nextText: 11
+      },
+      {
+        text: 'Ignorerer den',
+        nextText: 10
+      }
+    ]
+  },
+
+  {
+    id: 8,
+    text: 'Du går og venter på din pakke så du klikker på linket og ender på DAO’s hjemmeside. Her ønsker de oplysninger som navn, adresse mv. konto oplysninger til betaling for fragt som er oplyste grund til at pakken er blevet tilbageholdt. Hvad gør du?',
+    options: [
+      {
+        text: 'Skriver oplysningerne ind og sender dem afsted.',
+        nextText: 12
+      },
+      {
+        text: 'Ringer til DAO',
+        nextText: 13
+      },
+      {
+        text: 'Lukker siden igen',
+        nextText: 14
+      }
+    ]
+  },
+  
+  {
+    id: 9,
+    text: 'Du har bestilt en pakke med levering ved DAO, som så mange gange før, men dette har du aldrig oplevet, så du går manuelt ind på DAO’s hjemmeside. Der står din pakke er på vej. hvad gør du med mailen?',
+    options: [
+      {
+        text: 'Sletter mailen',
+        nextText: 16
+      },
+      {
+        text: 'Anmelder afsender og sletter mailen',
+        nextText: 15
+      },
+      {
+        text: 'Ingenting',
+        nextText: 16
+      }
+    ]
+  },
+
+  {
+    id: 10,
+    text: 'Efter et stykke tid falder du over mailen igen, hvad gør du?',
+    options: [
+      {
+        text: 'Sletter mailen',
+        nextText: 16
+      },
+      {
+        text: 'Anmelder afsender og sletter mailen',
+        nextText: 11
+      },
+      {
+        text: 'Ingenting',
+        nextText: 16
+      }
+    ]
+  },
+  
+  {
+    id: 11,
+    text: 'Du mistænker at mailen er fake, måske fordi du ikke har bestilt noget men der er også andre indikationer. Du vælger at anmelde afsenderen og slette mailen. Du har dermed blokeret afsender i at kunne sende dig yderligere. Yay! ',
+    options: [
+      {
+        text: 'Tilbage til start',
+        nextText: 7
+      }
+    ]
+  },
+
+  {
+    id: 12,
+    text: 'Du har faldet for phishing-angrebet, og dine personlige oplysninger er nu kompromitteret. Den webside, du besøgte, var en fupside, der blev brugt til at stjæle dine oplysninger.',
+    options: [
+      {
+        text: 'Tilbage til start',
+        nextText: 7
+      }
+    ]
+  },
+
+  {
+    id: 13,
+    text: 'DAO oplyser at de ikke har sendt en sådan mail ud. Du skynder dig at lukke for hjemmesiden igen men desværre har hackeren fået adgang til din computer.',
+    options: [
+      {
+        text: 'Tilbage til start',
+        nextText: 7
+      }
+    ]
+  },
+
+  {
+    id: 14,
+    text: 'Selvom du skynder dig at lukke for hjemmesiden igen har hackeren desværre allerede fået adgang til din computer.',
+    options: [
+      {
+        text: 'Tilbage til start',
+        nextText: 7
+      }
+    ]
+  },
+
+  {
+    id: 15,
+    text: 'DAO’s hjemmeside har bekræftet din mistanke og du anmelder og sletter derfor mailen fra “dao”. Du har dermed blokeret afsenderen i at kunne sende dig yderligere!',
+    options: [
+      {
+        text: 'Tilbage til start',
+        nextText: 7
+      }
+    ]
+  },
+
+  {
+    id: 16,
+    text: 'Du har valgt at ignorerer eller slette mailen, hvilket vil resulterer i at afsenderen kan blive ved med at sende mails til dig, i håbet om at du en dag falder for deres scam.',
+    options: [
+      {
+        text: 'Tilbage til start',
+        nextText: 7
+      }
+    ]
   }
+
 ]
 
 startSenarie()
