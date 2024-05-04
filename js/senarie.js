@@ -77,7 +77,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'Du åbner din indbakke og ser en ny mail, der kommer fra din bank. Emnet lyder: "Vigtig meddelelse: Bekræft din kontooplysninger". Du bemærker straks, at afsenderens e-mailadresse virker lidt underlig og ikke matcher din banks normale e-mailadresse. Hvad gør du?',
+    text: 'Du åbner din indbakke og ser en ny mail, der er kommet fra din bank. Emnet lyder: "Vigtig meddelelse: Bekræft din kontooplysninger". Du bemærker straks, at afsenderens e-mailadresse virker lidt underlig og ikke matcher din banks normale e-mailadresse. Hvad gør du?',
     options: [
       {
         text: 'Du tænker, at det er bedst at følge instruktionerne for at undgå eventuelle problemer med din bankkonto.',
@@ -121,7 +121,7 @@ const textNodes = [
     text: 'Du klikker på det vedhæftede link og bliver ført til en webside, der beder om dine bankoplysninger og personlige oplysninger.',
     options: [
       {
-        text: 'Igen for at undgå eventuelle problemer med din bankkonto giver du oplysningerne som der er bedt om. ',
+        text: 'Webside ser legal ud og igen for at undgå eventuelle problemer med din bankkonto giver du oplysningerne som der er bedt om. ',
         nextText: 5
       },
       {
@@ -133,7 +133,7 @@ const textNodes = [
 
   {
     id: 5,
-    text: 'Resultat: Du har faldet for phishing-angrebet, og dine personlige oplysninger er nu kompromitteret. Den falske webside, du besøgte, var en fupside, der blev brugt til at stjæle dine oplysninger.',
+    text: 'Resultat: Du har faldet for phishing-angrebet, og dine personlige oplysninger er nu kompromitteret. Den webside, du besøgte, var en fupside, der blev brugt til at stjæle dine oplysninger.',
     options: [
       {
         text: 'Tilbage til start',

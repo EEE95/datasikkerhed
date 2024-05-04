@@ -39,6 +39,7 @@ html {
   height: 100%;
   width: 100%;
   height: 100vh;
+  overflow: auto;
 }
 
 body {
@@ -70,6 +71,12 @@ footer a.active {
     font-size: 100px;
   }
 }
+@media (max-width: 1000px) {
+  footer {
+    position: sticky;
+    background-color: transparent;
+  }
+}
 
 .btn {
   background-color: #23742F;
@@ -80,7 +87,7 @@ footer a.active {
   font-family: "Share", sans-serif;
   color: #dbdbdb;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   display: inline-block;
 }
 .btn:hover {
@@ -90,14 +97,18 @@ footer a.active {
   cursor: pointer;
   transition-duration: 0.7s;
 }
+@media (max-width: 800px) {
+  .btn {
+    font-size: 16px;
+  }
+}
 
-/* forsiden */
+/********************* forsiden *********************/
 .hero-section {
   background-image: url(../img/hero.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
 }
 .hero-section .contain {
   padding-top: 300px;
@@ -116,11 +127,16 @@ footer a.active {
     font-size: 50px;
   }
 }
+@media (max-width: 500px) {
+  .hero-section .contain .titel {
+    font-size: 36px;
+  }
+}
 .hero-section .contain .titel.første-titel {
   color: #dbdbdb;
 }
 
-/*intro side*/
+/**************intro side*************/
 .txt-section {
   margin: 0 100px;
 }
@@ -154,17 +170,34 @@ footer a.active {
   .txt-section {
     margin: 0 50px;
   }
+  .txt-section h1 {
+    font-size: 26px;
+  }
   .txt-section p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .txt-section img {
+    float: none;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .txt-section .gap {
+    margin-left: 15px;
   }
 }
 
-/*informationsside - fold ud box*/
+/***************informationsside - fold ud box*********************/
 .bg-info {
   background-image: url(../img/hacker.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+@media (max-width: 500px) {
+  .bg-info {
+    background-image: none;
+  }
 }
 
 .box-section {
@@ -211,6 +244,8 @@ footer a.active {
   grid-column: 1/2;
   grid-row: 1/5;
   padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .box-section .indhold p {
   padding-top: 10px;
@@ -230,11 +265,48 @@ footer a.active {
 .box-section .box:nth-child(4) {
   grid-column: 2/3;
 }
-
-/*senarie*/
-.senarie {
-  height: 90vh;
+@media (max-width: 1000px) {
+  .box-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .box-section img {
+    rotate: -90deg;
+  }
 }
+@media (max-width: 500px) {
+  .box-section {
+    margin-top: 0;
+    display: block;
+    max-height: auto;
+    color: #dbdbdb;
+  }
+  .box-section .box {
+    width: 100%;
+    height: 100px;
+    border-radius: 0px;
+    cursor: none;
+    color: black;
+  }
+  .box-section .box h2 {
+    font-size: 20px;
+  }
+  .box-section .læring {
+    display: contents;
+    text-align: left;
+    font-family: "Share", sans-serif;
+  }
+  .box-section .læring p {
+    margin: 20px 20px;
+    font-size: 16px;
+  }
+  .box-section .indhold {
+    display: none;
+  }
+}
+
+/**************senarie*************/
 .senarie h1 {
   text-align: center;
   padding-top: 40px;
@@ -265,8 +337,62 @@ footer a.active {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 1000px) {
+  .senarie h1 {
+    font-size: 32px;
+    padding-top: 20px;
+  }
+  .senarie .container {
+    padding: 10px 50px 50px 50px;
+  }
+  .senarie .container #text {
+    width: 85%;
+    font-size: 18px;
+  }
+  .senarie .container #option-buttons {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .senarie .container button {
+    padding: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .senarie .container {
+    padding: 10px 20px 50px 20px;
+  }
+  .senarie .container #text {
+    width: 85%;
+    font-size: 18px;
+  }
+  .senarie .container #option-buttons {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .senarie h1 {
+    font-size: 22px;
+  }
+  .senarie .container {
+    padding: 10px 10px 0 10px;
+  }
+  .senarie .container #text {
+    width: 95%;
+    font-size: 16px;
+  }
+  .senarie .container #option-buttons {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .senarie .container #option-buttons button {
+    padding: 5px;
+  }
+}
 
-/*afslutning*/
+/*********************afslutning******************/
 .slutning {
   background-color: #23742F;
 }
@@ -275,7 +401,7 @@ footer a.active {
 }
 
 .end-section {
-  margin: 200px 100px;
+  margin: 100px 100px;
 }
 .end-section h4 {
   font-family: "Share Tech Mono", monospace;
@@ -284,4 +410,14 @@ footer a.active {
 .end-section .safety {
   height: 200px;
   padding-bottom: 25px;
+}
+@media (max-width: 1000px) {
+  .end-section {
+    margin: 50px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .end-section {
+    margin: 20px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
