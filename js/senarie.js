@@ -12,6 +12,7 @@ function startSenarie() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text 
+  changeBackground(textNodeIndex);
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
@@ -32,15 +33,29 @@ function changeBackground(nextText) {
   switch (nextText) {
     case 1:
       body.style.backgroundImage = 'url("img/bg-start.png")';
-      body.style.si
       break;
     case 2:
-      body.style.backgroundImage = 'url("img/bg-sur-hacker.png")';
+      body.style.backgroundImage = 'url("img/bg-hacker-meget-sur.png")';
+      break;
+    case 3:
+      body.style.backgroundImage = 'url("img/bg-hacker-lidt-sur.png")';
+      break;
+    case 4:
+      body.style.backgroundImage = 'url("img/bg-hacker-lidt-glad.png")';
+      break;
+    case 5:
+      body.style.backgroundImage = 'url("img/bg-hacker-meget-glad.png")';
+      break;
+    case 6:
+      body.style.backgroundImage = 'url("img/bg-hacker-meget-glad.png")';
       break;
     default:
       body.style.backgroundImage = 'url("img/bg-start.png")'; 
       break;
   }
+  body.style.backgroundSize = 'contain';
+  body.style.backgroundPosition = 'center';
+  body.style.backgroundRepeat = 'no-repeat';
 }
 
 

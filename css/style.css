@@ -105,6 +105,7 @@ footer a.active {
 /*intro side*/
 .txt-section {
   margin: 0 100px;
+  height: auto;
 }
 .txt-section img {
   width: 40%;
@@ -116,14 +117,21 @@ footer a.active {
 }
 .txt-section h1 {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .txt-section p {
   text-align: left;
-  margin: 50px 0;
+  font-size: 20px;
 }
 .txt-section .gap {
   margin-left: 50px;
+}
+.txt-section .space {
+  margin-top: 20px;
+}
+.txt-section .fed {
+  font-weight: 800;
+  color: black;
 }
 
 /*informationsside - fold ud box*/
@@ -179,6 +187,7 @@ footer a.active {
 }
 .box-section .indhold p {
   padding-top: 10px;
+  text-align: left;
 }
 .box-section .box:nth-child(2) {
   grid-column: 4/5;
@@ -193,9 +202,12 @@ footer a.active {
 }
 
 /*senarie*/
+.senarie {
+  height: 90vh;
+}
 .senarie h1 {
   text-align: center;
-  margin-top: 40px;
+  padding-top: 40px;
   color: #dbdbdb;
 }
 .senarie .container {
@@ -214,6 +226,7 @@ footer a.active {
   width: 60%;
   margin-top: 30px;
   padding: 10px;
+  opacity: 90%;
 }
 .senarie .container #option-buttons button {
   background-color: rgb(59, 156, 72);

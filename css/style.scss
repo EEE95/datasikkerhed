@@ -101,6 +101,7 @@ footer{
 /*intro side*/
 .txt-section{
     margin: 0 100px;
+    height: auto;
 
     img{
         width: 40%;
@@ -114,16 +115,25 @@ footer{
 
     h1{
         text-align: center;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     p{
         text-align: left;
-        margin: 50px 0;
+        font-size: 20px;
     }
 
     .gap{
         margin-left: 50px;
+    }
+
+    .space{
+        margin-top: 20px;
+    }
+
+    .fed{
+        font-weight: 800;
+        color: black;
     }
 
 }
@@ -191,6 +201,7 @@ footer{
 
         p{
             padding-top: 10px;
+            text-align: left;
         }
     }
 
@@ -211,10 +222,11 @@ footer{
 
 /*senarie*/
 .senarie{
+height: 90vh;
 
     h1{
         text-align: center;
-        margin-top: 40px;
+        padding-top: 40px;
         color: partial.$text-color;
     }
 
@@ -235,6 +247,7 @@ footer{
         width: 60%;
         margin-top: 30px;
         padding: 10px;
+        opacity: 90%;
   
           button{
             background-color: rgb(59, 156, 72);
