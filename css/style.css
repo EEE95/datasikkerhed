@@ -320,7 +320,7 @@ footer a.active {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .senarie .line {
     display: flex;
     flex-direction: column;
@@ -338,7 +338,7 @@ footer a.active {
 }
 @media (max-width: 500px) {
   .senarie .line img {
-    width: 25px;
+    width: 35px;
   }
 }
 .senarie .line #bank {
