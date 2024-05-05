@@ -53,28 +53,6 @@ footer {
   width: 100%;
   background-color: transparent;
 }
-footer img {
-  width: 40px;
-  cursor: pointer;
-  float: left;
-  border: 1px black solid;
-  padding: 3px;
-}
-footer #bank {
-  border-radius: 10px 0 0 10px;
-  margin-left: 20px;
-  background-color: rgb(72, 135, 218);
-}
-footer #bank:hover {
-  background-color: rgb(228, 192, 77);
-}
-footer #dao {
-  border-radius: 0 10px 10px 0;
-  background-color: rgb(72, 135, 218);
-}
-footer #dao:hover {
-  background-color: rgb(228, 192, 77);
-}
 footer ul {
   display: flex;
   justify-content: center;
@@ -222,6 +200,9 @@ footer a.active {
   background-position: center;
   background-size: contain;
 }
+.bg-info a {
+  margin: 50px 0;
+}
 @media (max-width: 500px) {
   .bg-info {
     background-image: none;
@@ -335,8 +316,46 @@ footer a.active {
 }
 
 /**************senarie*************/
-.senarie h1 {
-  text-align: center;
+.senarie .line {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .senarie .line {
+    display: flex;
+    flex-direction: column;
+  }
+  .senarie .line h1 {
+    text-align: center;
+  }
+}
+.senarie .line img {
+  width: 40px;
+  cursor: pointer;
+  border: 1px black solid;
+  padding: 3px;
+  margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .senarie .line img {
+    width: 25px;
+  }
+}
+.senarie .line #bank {
+  border-radius: 10px;
+  background-color: rgb(72, 135, 218);
+}
+.senarie .line #bank:hover {
+  background-color: rgb(228, 192, 77);
+}
+.senarie .line #dao {
+  border-radius: 10px;
+  background-color: rgb(72, 135, 218);
+}
+.senarie .line #dao:hover {
+  background-color: rgb(228, 192, 77);
+}
+.senarie .line h1 {
   padding-top: 40px;
   color: #dbdbdb;
 }

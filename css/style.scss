@@ -55,33 +55,6 @@ footer{
     width: 100%;
     background-color: transparent;
 
-    img{
-        width: 40px;
-        cursor: pointer;
-        float: left;
-        border: 1px black solid;
-        padding: 3px;         
-      }
-      
-      #bank{
-            border-radius: 10px 0 0 10px;
-            margin-left: 20px;
-            background-color: rgb(72, 135, 218);
-
-            &:hover{
-                background-color: rgb(228, 192, 77);
-              }
-          }
-      
-      #dao{
-        border-radius: 0 10px 10px 0;
-        background-color: rgb(72, 135, 218);
-
-        &:hover{
-            background-color: rgb(228, 192, 77);
-          }
-      }
-
     ul{
       display: flex;
       justify-content: center;
@@ -231,6 +204,10 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    a{
+        margin: 50px 0;
+    }
     
     @media (max-width: 500px){
         background-image: none;
@@ -363,13 +340,55 @@ footer{
 
 /**************senarie*************/
 .senarie{
-    
-    h1{
-        text-align: center;
-        padding-top: 40px;
-        color: partial.$text-color;
-    }
 
+    .line{
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (max-width: 500px){
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                text-align: center;
+            }
+        }
+   
+        img{
+            width: 40px;
+            cursor: pointer;
+            border: 1px black solid;
+            padding: 3px;
+            margin-top: 50px; 
+        
+            @media (max-width: 500px){
+                width: 25px;
+            }
+        }
+      
+        #bank{
+            border-radius: 10px;
+            background-color: rgb(72, 135, 218);
+
+            &:hover{
+                background-color: rgb(228, 192, 77);
+              }
+          }
+      
+        #dao{
+            border-radius: 10px;
+            background-color: rgb(72, 135, 218);
+
+            &:hover{
+            background-color: rgb(228, 192, 77);
+            }
+        }
+
+        h1{
+            padding-top: 40px;
+            color: partial.$text-color;
+        }
+    }
     .container{
     display: flex;
     flex-direction: column;
