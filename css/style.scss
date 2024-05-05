@@ -53,29 +53,33 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: partial.$bg-color;
+    background-color: transparent;
 
     img{
         width: 40px;
         cursor: pointer;
         float: left;
         border: 1px black solid;
-        padding: 3px;
-
-      
-          &:hover{
-            background-color: rgb(228, 192, 77);
-          }
-         
+        padding: 3px;         
       }
       
       #bank{
             border-radius: 10px 0 0 10px;
             margin-left: 20px;
+            background-color: rgb(72, 135, 218);
+
+            &:hover{
+                background-color: rgb(228, 192, 77);
+              }
           }
       
       #dao{
         border-radius: 0 10px 10px 0;
+        background-color: rgb(72, 135, 218);
+
+        &:hover{
+            background-color: rgb(228, 192, 77);
+          }
       }
 
     ul{
@@ -127,8 +131,8 @@ footer{
     background-size: cover;
 
     .contain{
-        padding-top: 300px;
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 70px;
         text-align: left;
         padding-left: 20%;
     }
@@ -152,6 +156,9 @@ footer{
         color: partial.$text-color;
     }  
 
+    a{
+        margin-bottom: 100px;
+    }
 }
 
 /**************intro side*************/
@@ -189,6 +196,10 @@ footer{
     .fed{
         font-weight: 800;
         color: black;
+    }
+
+    a{
+        margin-bottom: 100px;
     }
 
     @media (max-width: 800px) {
@@ -230,7 +241,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     row-gap: 40px;
 
     .box{
@@ -352,6 +364,7 @@ footer{
 
 /**************senarie*************/
 .senarie{
+    
     h1{
         text-align: center;
         padding-top: 40px;
@@ -363,10 +376,14 @@ footer{
     flex-direction: column;
     padding: 20px 100px 0 100px;
     align-items: center;
+    margin-bottom: 100px;
   
       #text{
         width: 75%;
-        color: partial.$text-color;
+        color: black;
+        background-color: rgb(165, 165, 165, 70%);
+        border-radius: 15px;
+        padding: 5px;
       }
   
       #option-buttons{
@@ -374,6 +391,7 @@ footer{
         flex-direction: column;
         width: 60%;
         margin-top: 30px;
+        margin-bottom: 100px;
         padding: 10px;
         opacity: 90%;
   
