@@ -196,7 +196,7 @@ footer{
 
     @media (max-width: 500px){
         .gap{
-            margin-left: 15px;
+            margin-left: 0px;
         }
     }
 }
@@ -353,6 +353,7 @@ footer{
         @media (max-width: 650px){
             display: flex;
             flex-direction: column;
+            gap: 0px;
 
             h1{
                 text-align: center;

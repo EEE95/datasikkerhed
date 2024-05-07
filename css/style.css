@@ -190,7 +190,7 @@ footer a.active {
 }
 @media (max-width: 500px) {
   .txt-section .gap {
-    margin-left: 15px;
+    margin-left: 0px;
   }
 }
 
@@ -326,6 +326,7 @@ footer a.active {
   .senarie .line {
     display: flex;
     flex-direction: column;
+    gap: 0px;
   }
   .senarie .line h1 {
     text-align: center;
