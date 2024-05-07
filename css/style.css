@@ -104,12 +104,13 @@ footer a.active {
 }
 
 /********************* forsiden *********************/
-.hero-section {
+.forside {
   background-image: url(../img/hero.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero-section .contain {
   padding-top: 200px;
   padding-bottom: 70px;
@@ -318,7 +319,8 @@ footer a.active {
 /**************senarie*************/
 .senarie .line {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 40px;
 }
 @media (max-width: 650px) {
   .senarie .line {

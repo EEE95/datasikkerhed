@@ -97,11 +97,14 @@ footer{
 
 
 /********************* forsiden *********************/
-.hero-section{
+.forside{
     background-image: url(../img/hero.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero-section{
 
     .contain{
         padding-top: 200px;
@@ -343,7 +346,9 @@ footer{
 
     .line{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 40px;
+        
 
         @media (max-width: 650px){
             display: flex;
